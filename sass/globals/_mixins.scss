@@ -1,0 +1,81 @@
+
+// Add Mixins Here
+
+
+//Generic Header Styling
+
+@mixin styling-header-txt ($font,$font-weight,$font-size,$font-color){
+	
+	font-family:$font,sans-serif;
+	font-weight:$font-weight;
+	font-size:$font-size;
+	color:$font-color;
+	text-shadow: 1px 1px 1px rgba(150, 150, 150, 1);
+}
+
+
+//Style Your Icons
+@mixin style-icons ($width,$height,$url){
+	
+	 width:$width;
+	 height:$height;
+	 background:url($url) no-repeat;
+}
+
+
+
+
+
+// Section Header Styling
+
+@mixin section-header-txt($font,$font-size,$font-color){
+	
+	font-family:$font,sans-serif;
+	font-weight:300;
+	font-size:$font-size;
+	color:$font-color;
+	text-shadow: 1px 1px 1px rgba(150, 150, 150, 1);
+}
+
+//Section Body Copy Styling
+
+@mixin section-body-txt($font,$font-size,$font-color){
+
+	font-family:$font,sans-serif;
+	font-weight:400;
+	font-size:$font-size;
+	color:$font-color;
+	
+}
+
+
+//Footer Section Styling
+
+@mixin section-footer-txt($font,$font-size,$font-color){
+
+	font-family:$font,sans-serif;
+	font-weight:400;
+	font-size:$font-size;
+	color:$font-color;
+	
+}
+
+// Body Border Line Styling
+@mixin body-line-color ($border-thickness,$border-width,$bar-color){
+
+	width:$border-width;
+	border-top: $border-thickness solid $bar-color;
+}
+
+
+
+//Takes out round corners for mobile views on container-box
+@mixin turn-off-round-container{
+	
+  	width:100%;
+  	height:100%;
+  	-webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+	border-radius: 0px;
+  
+}
